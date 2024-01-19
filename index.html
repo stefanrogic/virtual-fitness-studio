@@ -7,22 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Virtual Fitness Studio - Get fit with our programs</title>
   </head>
-  <body>
-    <header class="container mx-auto">
-      <nav class="relative flex flex-row mx-auto p-3">
+  <body class="">
+    <header class="container mx-auto px-2">
+      <nav class="sticky top-0 flex flex-row mx-auto py-6 bg-white">
         <h1 class="mr-auto text-3xl font-bold">VFS</h1>
-        <ul class="flex flex-row gap-5">
-          <li><a href="#">LINK</a></li>
-          <li><a href="#">LINK</a></li>
-          <li><a href="#">LINK</a></li>
-          <li><a href="#">LINK</a></li>
-        </ul>
+
+        <div class="hidden md:flex flex-row space-x-5 items-center">
+          <a class="text-black hover:text-red-600" href="#">Pricing</a>
+          <a class="text-black hover:text-red-600" href="#">About Us</a>
+          <a class="text-black hover:text-red-600" href="#">Community</a>
+          <a class="text-white" href="#"><button class="bg-red-400 hover:bg-red-600 px-5 py-2">Sign In</button></a>
+        </div>
+
+        <button class="md:hidden bg-red-400 hover:bg-red-600 text-white px-5 py-2">Menu</button>
       </nav>
 
-      <div class="">
+      <div class="h-screen">
         <h1 class="text-3xl font-bold underline text-red-500">Hello world!</h1>
       </div>
     </header>
+
+    <section class="container mx-auto px-2 h-screen">
+      <h1 class="text-3xl font-bold underline text-red-500">Hello world!</h1>
+    </section>
 
     <script type="module" src="./src/ts/main.ts"></script>
   </body>

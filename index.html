@@ -10,16 +10,16 @@
   <body>
     <!--! MODALS -->
     <div class="hidden" id="signin-modal">
-      <div class="fixed flex justify-center items-center m-auto z-20 h-screen w-screen inset-x-0 inset-y-0 bg-black bg-opacity-20"></div>
+      <div class="fixed flex justify-center items-center m-auto z-99 h-screen w-screen inset-x-0 inset-y-0 bg-black bg-opacity-20"></div>
       <div class="fixed m-auto z-20 md: h-3/4 inset-x-0 inset-y-0 border bg-white">
-        <button class="ml-auto text-3xl p-4 bg-red-400 hover:bg-red-600 text-white transition ease-in-out duration-150" id="close-modal">X</button>
+        <button class="ml-auto text-3xl p-4 bg-red-400 hover:bg-red-600 text-white transition ease-in-out duration-150 rounded-lg" id="close-modal">X</button>
         <h1>SIGN IN MODAL</h1>
       </div>
     </div>
     <!--!----->
 
     <!--? NAVBAR -->
-    <nav class="sticky top-0 bg-white" id="navbar">
+    <nav class="sticky z-99 top-0 bg-white border-b border-gray-50" id="navbar">
       <div class="container px-4 flex flex-row mx-auto py-6">
         <h1 class="mr-auto text-3xl font-bold">VFS</h1>
 
@@ -27,41 +27,45 @@
           <a class="text-black hover:text-red-600" href="#">Pricing</a>
           <a class="text-black hover:text-red-600" href="#">About Us</a>
           <a class="text-black hover:text-red-600" href="#">Community</a>
-          <button class="bg-red-400 hover:bg-red-600 text-white px-5 py-2 transition ease-in-out duration-150" id="signin-btn">Sign Up</button>
+          <button class="bg-red-400 hover:bg-red-600 text-white px-5 py-2 transition ease-in-out duration-150 rounded-lg" id="signin-btn">Sign Up</button>
         </div>
 
-        <button class="md:hidden bg-red-400 hover:bg-red-600 text-white px-5 py-2 transition ease-in-out duration-150">Menu</button>
+        <button class="md:hidden bg-red-400 hover:bg-red-600 text-white px-5 py-2 transition ease-in-out duration-150 rounded-lg">Menu</button>
       </div>
     </nav>
 
     <!--? HERO SECTION -->
-    <div class="bg-[url('')] bg-cover bg-blend-multiply mt-14">
-      <div class="container mx-auto px-4 flex flex-row items-center space-x-14" id="hero">
-        <div class="flex flex-col lg:w-1/2 space-y-14">
+    <section class="mt-14">
+      <div class="container mx-auto px-4 flex flex-col xl:flex-row items-center xl:space-x-14 space-y-20 xl:space-y-0" id="hero">
+        <div class="flex flex-col xl:w-1/2 space-y-14">
           <div class="flex flex-col space-y-7">
             <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-black">Where Fitness Meets Convenience</h1>
             <p class="text-xl font-normal text-gray-500">Convenient, effective, and tailored to you – virtual workouts for every lifestyle.</p>
           </div>
+
           <div class="flex flex-row space-x-5 items-center">
-            <button class="bg-red-400 hover:bg-red-600 text-white px-5 py-2 transition ease-in-out duration-150">Start Your Fitness Journey</button>
+            <button class="bg-red-400 hover:bg-red-600 text-white px-5 py-2 transition ease-in-out duration-150 rounded-lg">Start Your Fitness Journey</button>
             <p class="text-gray-500">Join thousands of people</p>
           </div>
         </div>
-        <div class="relative hidden lg:flex justify-center items-center w-1/2 py-56 bg-[url('/images/hero-img.jpg')] bg-cover">
-          <div class="absolute flex justify-center items-center w-24 h-24 hover:scale-110 rounded-full bg-red-400 hover:bg-red-600 cursor-pointer m-auto z-20 inset-x-0 inset-y-0 transition ease-in-out duration-150">
+
+        <div class="flex justify-center items-center w-full xl:w-1/2 xl:h-full bg-cover">
+          <div class="absolute flex justify-center items-center w-24 h-24 hover:scale-110 rounded-full bg-red-400 hover:bg-red-600 cursor-pointer transition ease-in-out duration-150">
             <img class="w-10 h-10" src="./images/play-fill.svg" alt="play-icon" />
           </div>
+
+          <img class="rounded-lg" src="./images/hero-img.jpg" alt="video-thumbnail" />
         </div>
       </div>
-    </div>
+    </section>
 
     <div class="container mx-auto px-4 mt-20 space-y-40">
       <!--? WORKOUT CATEGORIES SECTION -->
       <section class="flex flex-col space-y-14 items-center" id="workout-categories">
         <div class="flex flex-col md:flex-row space-y-14 md:space-y-0">
           <div class="flex flex-col justify-center items-start md:me-20 cursor-pointer">
-            <div class="flex flex-row space-x-3 mb-7">
-              <!-- <img src="/images/circle-half.svg" alt="category-icon" /> -->
+            <div class="flex flex-row items-center space-x-5 mb-7">
+              <img class="h-10 w-10" src="/images/running.png" alt="category-icon" />
               <h1 class="text-2xl lg:text-3xl font-medium text-red-600">Cardio Workouts</h1>
             </div>
 
@@ -71,8 +75,8 @@
             </p>
           </div>
           <div class="flex flex-col justify-center items-start md:me-20 cursor-pointer">
-            <div class="flex flex-row space-x-3 mb-7">
-              <!-- <img src="/images/circle-half.svg" alt="category-icon" /> -->
+            <div class="flex flex-row items-center space-x-5 mb-7">
+              <img class="h-10 w-10" src="/images/dumbbell.png" alt="category-icon" />
               <h1 class="text-2xl lg:text-3xl font-medium text-red-600">Strength Training</h1>
             </div>
 
@@ -82,8 +86,8 @@
             </p>
           </div>
           <div class="flex flex-col justify-center items-start cursor-pointer">
-            <div class="flex flex-row space-x-3 mb-7">
-              <!-- <img src="/images/circle-half.svg" alt="category-icon" /> -->
+            <div class="flex flex-row items-center space-x-5 mb-7">
+              <img class="h-10 w-10" src="/images/lotus.png" alt="category-icon" />
               <h1 class="text-2xl lg:text-3xl font-medium text-red-600">Yoga Sessions</h1>
             </div>
 
@@ -93,135 +97,158 @@
             </p>
           </div>
         </div>
-        <button class="bg-red-400 hover:bg-red-600 text-white px-5 py-2 transition ease-in-out duration-150">Find Your Perfect Class</button>
+        <button class="bg-red-400 hover:bg-red-600 text-white px-5 py-2 transition ease-in-out duration-150 rounded-lg">Find Your Perfect Class</button>
+      </section>
+
+      <!--? BENEFITS SECTION -->
+      <section class="flex flex-col-reverse xl:flex-row items-center lg:space-x-14">
+        <div class="flex flex-col xl:w-1/2 space-y-10">
+          <h1 class="text-5xl font-bold">Experience Fitness on Your Own Terms</h1>
+          <p class="font-medium text-lg">
+            No rigid schedules. No commute times. With our virtual fitness studio, you have the freedom to tailor your workouts to fit your lifestyle. Whether you're an early riser or a night owl, achieving your fitness goals has never been more
+            flexible.
+          </p>
+
+          <ul class="list-disc ms-5 w-2/3 space-y-5">
+            <li>Access your workouts from the comfort of your home or while traveling. Our virtual studio is available 24/7 to suit your schedule.</li>
+            <li>Can't make it to a live session? No problem. Pause, rewind, or replay workouts to accommodate your pace and preferences.</li>
+            <li>Choose from a variety of workout durations to fit your available time, whether it's a quick energy boost or a longer, immersive session.</li>
+            <li>Explore different workout categories and seamlessly switch between them to create a diverse and personalized fitness routine.</li>
+          </ul>
+        </div>
+        <div class="xl:w-1/2 h-96 bg-red-400 mb-20 xl:mb-0"></div>
       </section>
 
       <!--? TESTIMONIALS SECTION -->
-      <section class="grid grid-rows-6 md:grid-rows-3 xl:grid-rows-2 grid-flow-col gap-7" id="testimonials">
-        <div class="flex flex-col space-y-5 p-6 bg-red-50 rounded-lg">
-          <div class="flex flex-row space-x-5">
-            <div class="w-14 h-14 rounded-full bg-red-400"></div>
+      <section class="flex flex-col space-y-10" id="testimonials">
+        <h1>TESTIMONIALS</h1>
 
-            <div class="flex flex-col">
-              <div class="flex flex-row space-x-3">
-                <p>Sarah Thompson</p>
-                <p>New York, NY</p>
-              </div>
-              <div class="flex flex-row">
-                <p>Marketing Executive</p>
-              </div>
-            </div>
-          </div>
+        <div class="grid grid-rows-6 md:grid-rows-3 xl:grid-rows-2 grid-flow-col gap-7">
+          <div class="flex flex-col space-y-5 p-7 border rounded-lg">
+            <div class="flex flex-row space-x-5">
+              <div class="w-14 h-14 rounded-full bg-red-400"></div>
 
-          <p class="italic">
-            "Joining the virtual fitness studio was a game-changer for me. The convenience of working out from home fits perfectly into my busy schedule. The trainers are motivating, the classes are varied, and the results are real. I've never been
-            more consistent with my workouts!"
-          </p>
-        </div>
-
-        <div class="flex flex-col space-y-5 p-6 bg-red-50 rounded-lg">
-          <div class="flex flex-row space-x-5">
-            <div class="p-7 rounded-full bg-red-400"></div>
-
-            <div class="flex flex-col">
-              <div class="flex flex-row space-x-3">
-                <p>Alex Rodriguez</p>
-                <p>Los Angeles, CA</p>
-              </div>
-              <div class="flex flex-row">
-                <p>Software Developer</p>
+              <div class="flex flex-col">
+                <div class="flex flex-row space-x-3">
+                  <p class="font-medium">Sarah Thompson</p>
+                  <p class="text-red-600">New York, NY</p>
+                </div>
+                <div class="flex flex-row">
+                  <p class="font-light">Marketing Executive</p>
+                </div>
               </div>
             </div>
+
+            <p class="italic text-gray-500">
+              "Joining the virtual fitness studio was a game-changer for me. The convenience of working out from home fits perfectly into my busy schedule. The trainers are motivating, the classes are varied, and the results are real. I've never been
+              more consistent with my workouts!"
+            </p>
           </div>
 
-          <p class="italic">
-            "As a tech professional, I spend long hours at the computer. The virtual fitness studio has become my go-to solution for staying active. The strength training sessions have improved my posture and energy levels. It's like having a
-            personal trainer right in my living room."
-          </p>
-        </div>
+          <div class="flex flex-col space-y-5 p-7 border rounded-lg">
+            <div class="flex flex-row space-x-5">
+              <div class="w-14 h-14 rounded-full bg-red-400"></div>
 
-        <div class="flex flex-col space-y-5 p-6 bg-red-50 rounded-lg">
-          <div class="flex flex-row space-x-5">
-            <div class="p-7 rounded-full bg-red-400"></div>
-
-            <div class="flex flex-col">
-              <div class="flex flex-row space-x-3">
-                <p>Emily Chang</p>
-                <p>Chicago, IL</p>
-              </div>
-              <div class="flex flex-row">
-                <p>Graphic Designer</p>
+              <div class="flex flex-col">
+                <div class="flex flex-row space-x-3">
+                  <p class="font-medium">Alex Rodriguez</p>
+                  <p class="text-red-600">Los Angeles, CA</p>
+                </div>
+                <div class="flex flex-row">
+                  <p class="font-light">Software Developer</p>
+                </div>
               </div>
             </div>
+
+            <p class="italic text-gray-500">
+              "As a tech professional, I spend long hours at the computer. The virtual fitness studio has become my go-to solution for staying active. The strength training sessions have improved my posture and energy levels. It's like having a
+              personal trainer right in my living room."
+            </p>
           </div>
 
-          <p class="italic">
-            "Yoga sessions with the virtual studio have been a true blessing. The calming atmosphere and expert guidance have transformed my practice. It's not just about physical fitness; it's also about mental well-being. Highly recommend it for
-            anyone seeking balance in their life."
-          </p>
-        </div>
+          <div class="flex flex-col space-y-5 p-7 border rounded-lg">
+            <div class="flex flex-row space-x-5">
+              <div class="w-14 h-14 rounded-full bg-red-400"></div>
 
-        <div class="flex flex-col space-y-5 p-6 bg-red-50 rounded-lg">
-          <div class="flex flex-row space-x-5">
-            <div class="p-7 rounded-full bg-red-400"></div>
-
-            <div class="flex flex-col">
-              <div class="flex flex-row space-x-3">
-                <p>Sarah Thompson</p>
-                <p>New York, NY</p>
-              </div>
-              <div class="flex flex-row">
-                <p>Marketing Executive</p>
+              <div class="flex flex-col">
+                <div class="flex flex-row space-x-3">
+                  <p class="font-medium">Emily Chang</p>
+                  <p class="text-red-600">Chicago, IL</p>
+                </div>
+                <div class="flex flex-row">
+                  <p class="font-light">Graphic Designer</p>
+                </div>
               </div>
             </div>
+
+            <p class="italic text-gray-500">
+              "Yoga sessions with the virtual studio have been a true blessing. The calming atmosphere and expert guidance have transformed my practice. It's not just about physical fitness; it's also about mental well-being. Highly recommend it for
+              anyone seeking balance in their life."
+            </p>
           </div>
 
-          <p class="italic">
-            "Joining the virtual fitness studio was a game-changer for me. The convenience of working out from home fits perfectly into my busy schedule. The trainers are motivating, the classes are varied, and the results are real. I've never been
-            more consistent with my workouts!"
-          </p>
-        </div>
+          <div class="flex flex-col space-y-5 p-7 border rounded-lg">
+            <div class="flex flex-row space-x-5">
+              <div class="w-14 h-14 rounded-full bg-red-400"></div>
 
-        <div class="flex flex-col space-y-5 p-6 bg-red-50 rounded-lg">
-          <div class="flex flex-row space-x-5">
-            <div class="p-7 rounded-full bg-red-400"></div>
-
-            <div class="flex flex-col">
-              <div class="flex flex-row space-x-3">
-                <p>Sarah Thompson</p>
-                <p>New York, NY</p>
-              </div>
-              <div class="flex flex-row">
-                <p>Marketing Executive</p>
+              <div class="flex flex-col">
+                <div class="flex flex-row space-x-3">
+                  <p class="font-medium">Aisha Malik</p>
+                  <p class="text-red-600">Dubai, UAE</p>
+                </div>
+                <div class="flex flex-row">
+                  <p class="font-light">Business Consultant</p>
+                </div>
               </div>
             </div>
+
+            <p class="italic text-gray-500">
+              "The virtual fitness studio has been a revelation for my fitness journey. Living in Dubai, where the weather can be extreme, the flexibility of working out from home is a game-changer. The virtual classes bring a global community
+              together, making it an enriching experience both culturally and physically."
+            </p>
           </div>
 
-          <p class="italic">
-            "Joining the virtual fitness studio was a game-changer for me. The convenience of working out from home fits perfectly into my busy schedule. The trainers are motivating, the classes are varied, and the results are real. I've never been
-            more consistent with my workouts!"
-          </p>
-        </div>
+          <div class="flex flex-col space-y-5 p-7 border rounded-lg">
+            <div class="flex flex-row space-x-5">
+              <div class="w-14 h-14 rounded-full bg-red-400"></div>
 
-        <div class="flex flex-col space-y-5 p-6 bg-red-50 rounded-lg">
-          <div class="flex flex-row space-x-5">
-            <div class="p-7 rounded-full bg-red-400"></div>
-
-            <div class="flex flex-col">
-              <div class="flex flex-row space-x-3">
-                <p>Sarah Thompson</p>
-                <p>New York, NY</p>
-              </div>
-              <div class="flex flex-row">
-                <p>Marketing Executive</p>
+              <div class="flex flex-col">
+                <div class="flex flex-row space-x-3">
+                  <p class="font-medium">Carlos Fernandez</p>
+                  <p class="text-red-600">Madrid, Spain</p>
+                </div>
+                <div class="flex flex-row">
+                  <p class="font-light">Architect</p>
+                </div>
               </div>
             </div>
+
+            <p class="italic text-gray-500">
+              "Joining the virtual fitness studio has been one of the best decisions I've made. The diverse workout categories and engaging trainers make every session enjoyable. As someone with a hectic schedule, having the option to choose from
+              various live and on-demand classes allows me to prioritize my health without compromising my work."
+            </p>
           </div>
 
-          <p class="italic">
-            "Joining the virtual fitness studio was a game-changer for me. The convenience of working out from home fits perfectly into my busy schedule. The trainers are motivating, the classes are varied, and the results are real. I've never been
-            more consistent with my workouts!"
-          </p>
+          <div class="flex flex-col space-y-5 p-7 border rounded-lg">
+            <div class="flex flex-row space-x-5">
+              <div class="w-14 h-14 rounded-full bg-red-400"></div>
+
+              <div class="flex flex-col">
+                <div class="flex flex-row space-x-3">
+                  <p class="font-medium">Mei Lin</p>
+                  <p class="text-red-600">Beijing, China</p>
+                </div>
+                <div class="flex flex-row">
+                  <p class="font-light">Software Engineer</p>
+                </div>
+              </div>
+            </div>
+
+            <p class="italic text-gray-500">
+              "Living in Beijing, I was looking for a fitness solution that could adapt to my busy lifestyle. The virtual fitness studio not only met but exceeded my expectations. The seamless integration of technology, coupled with a wide array of
+              workout options, has made it my go-to platform for staying active and healthy."
+            </p>
+          </div>
         </div>
       </section>
 

@@ -10,8 +10,8 @@
   <body>
     <!--! MODALS -->
     <div class="hidden" id="signin-modal">
-      <div class="fixed flex justify-center items-center m-auto z-99 h-screen w-screen inset-x-0 inset-y-0 bg-black bg-opacity-20"></div>
-      <div class="fixed m-auto z-20 md: h-3/4 inset-x-0 inset-y-0 border bg-white">
+      <div class="fixed z-30 flex justify-center items-center m-auto h-screen w-screen inset-x-0 inset-y-0 bg-black bg-opacity-20"></div>
+      <div class="fixed z-40 m-auto md: h-3/4 w-2/5 inset-x-0 inset-y-0 border bg-white">
         <button class="ml-auto text-3xl p-4 bg-red-400 hover:bg-red-600 text-white transition ease-in-out duration-150 rounded-lg" id="close-modal">X</button>
         <h1>SIGN IN MODAL</h1>
       </div>
@@ -19,8 +19,8 @@
     <!--!----->
 
     <!--? NAVBAR -->
-    <nav class="sticky z-99 top-0 bg-white border-b border-gray-50" id="navbar">
-      <div class="container px-4 flex flex-row mx-auto py-6">
+    <nav class="z-40 top-0 bg-white border-b border-gray-100" id="navbar">
+      <div class="container flex flex-row mx-auto py-6">
         <h1 class="mr-auto text-3xl font-bold">VFS</h1>
 
         <div class="hidden md:flex flex-row space-x-5 items-center">
@@ -35,8 +35,8 @@
     </nav>
 
     <!--? HERO SECTION -->
-    <section class="mt-14">
-      <div class="container mx-auto px-4 flex flex-col xl:flex-row items-center xl:space-x-14 space-y-20 xl:space-y-0" id="hero">
+    <section class="mt-20">
+      <div class="container mx-auto flex flex-col xl:flex-row items-center xl:space-x-14 space-y-20 xl:space-y-0" id="hero">
         <div class="flex flex-col xl:w-1/2 space-y-14">
           <div class="flex flex-col space-y-7">
             <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-black">Where Fitness Meets Convenience</h1>
@@ -49,8 +49,8 @@
           </div>
         </div>
 
-        <div class="flex justify-center items-center w-full xl:w-1/2 xl:h-full bg-cover">
-          <div class="absolute flex justify-center items-center w-24 h-24 hover:scale-110 rounded-full bg-red-400 hover:bg-red-600 cursor-pointer transition ease-in-out duration-150">
+        <div class="relative flex justify-center items-center w-full xl:w-1/2">
+          <div class="absolute flex z-10 justify-center items-center w-24 h-24 hover:scale-110 rounded-full bg-red-400 hover:bg-red-600 cursor-pointer transition ease-in-out duration-150">
             <img class="w-10 h-10" src="./images/play-fill.svg" alt="play-icon" />
           </div>
 
@@ -59,14 +59,14 @@
       </div>
     </section>
 
-    <div class="container mx-auto px-4 mt-20 space-y-40">
+    <div class="container mx-auto mt-20 xl:mt-32 space-y-20 xl:space-y-40">
       <!--? WORKOUT CATEGORIES SECTION -->
       <section class="flex flex-col space-y-14 items-center" id="workout-categories">
         <div class="flex flex-col md:flex-row space-y-14 md:space-y-0">
           <div class="flex flex-col justify-center items-start md:me-20 cursor-pointer">
             <div class="flex flex-row items-center space-x-5 mb-7">
               <img class="h-10 w-10" src="/images/running.png" alt="category-icon" />
-              <h1 class="text-2xl lg:text-3xl font-medium text-red-600">Cardio Workouts</h1>
+              <h1 class="text-2xl lg:text-3xl font-medium text-red-400">Cardio Workouts</h1>
             </div>
 
             <p class="text-gray-500">
@@ -77,7 +77,7 @@
           <div class="flex flex-col justify-center items-start md:me-20 cursor-pointer">
             <div class="flex flex-row items-center space-x-5 mb-7">
               <img class="h-10 w-10" src="/images/dumbbell.png" alt="category-icon" />
-              <h1 class="text-2xl lg:text-3xl font-medium text-red-600">Strength Training</h1>
+              <h1 class="text-2xl lg:text-3xl font-medium text-red-400">Strength Training</h1>
             </div>
 
             <p class="text-gray-500">
@@ -88,7 +88,7 @@
           <div class="flex flex-col justify-center items-start cursor-pointer">
             <div class="flex flex-row items-center space-x-5 mb-7">
               <img class="h-10 w-10" src="/images/lotus.png" alt="category-icon" />
-              <h1 class="text-2xl lg:text-3xl font-medium text-red-600">Yoga Sessions</h1>
+              <h1 class="text-2xl lg:text-3xl font-medium text-red-400">Yoga Sessions</h1>
             </div>
 
             <p class="text-gray-500">
@@ -97,31 +97,33 @@
             </p>
           </div>
         </div>
-        <button class="bg-red-400 hover:bg-red-600 text-white px-5 py-2 transition ease-in-out duration-150 rounded-lg">Find Your Perfect Class</button>
+        <!-- <button class="bg-red-400 hover:bg-red-600 text-white px-5 py-2 transition ease-in-out duration-150 rounded-lg">Find Your Perfect Class</button> -->
       </section>
 
       <!--? BENEFITS SECTION -->
-      <section class="flex flex-col-reverse xl:flex-row items-center lg:space-x-14">
+      <section class="flex flex-col-reverse xl:flex-row items-center xl:space-x-14">
         <div class="flex flex-col xl:w-1/2 space-y-10">
-          <h1 class="text-5xl font-bold">Experience Fitness on Your Own Terms</h1>
+          <h1 class="text-5xl font-bold text-red-400">Experience Fitness on Your Own Terms</h1>
           <p class="font-medium text-lg">
             No rigid schedules. No commute times. With our virtual fitness studio, you have the freedom to tailor your workouts to fit your lifestyle. Whether you're an early riser or a night owl, achieving your fitness goals has never been more
             flexible.
           </p>
 
-          <ul class="list-disc ms-5 w-2/3 space-y-5">
+          <ul class="list-disc ms-5 w-2/3 space-y-5 text-gray-500">
             <li>Access your workouts from the comfort of your home or while traveling. Our virtual studio is available 24/7 to suit your schedule.</li>
             <li>Can't make it to a live session? No problem. Pause, rewind, or replay workouts to accommodate your pace and preferences.</li>
             <li>Choose from a variety of workout durations to fit your available time, whether it's a quick energy boost or a longer, immersive session.</li>
             <li>Explore different workout categories and seamlessly switch between them to create a diverse and personalized fitness routine.</li>
           </ul>
         </div>
-        <div class="xl:w-1/2 h-96 bg-red-400 mb-20 xl:mb-0"></div>
+        <div class="flex justify-center items-center xl:w-1/2 mb-20 xl:mb-0">
+          <img class="xl:w-2/3" src="/images/benefits-img.jpg" alt="" />
+        </div>
       </section>
 
       <!--? TESTIMONIALS SECTION -->
       <section class="flex flex-col space-y-10" id="testimonials">
-        <h1>TESTIMONIALS</h1>
+        <!-- <h1>TESTIMONIALS</h1> -->
 
         <div class="grid grid-rows-6 md:grid-rows-3 xl:grid-rows-2 grid-flow-col gap-7">
           <div class="flex flex-col space-y-5 p-7 border rounded-lg">

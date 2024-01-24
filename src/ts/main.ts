@@ -35,7 +35,7 @@ signInModal?.lastElementChild?.firstElementChild?.addEventListener("click", () =
   modalToggle = false;
 });
 
-pricingButtons?.addEventListener("click", (e: Event) => {
+pricingButtons?.addEventListener("click", (e: MouseEvent) => {
   if ((e?.target as HTMLButtonElement)?.id === "plan-btn-0" && pricingToggle === 1) {
     pricingToggle = 0;
 
@@ -46,12 +46,10 @@ pricingButtons?.addEventListener("click", (e: Event) => {
       (e?.target as HTMLButtonElement).nextElementSibling?.classList.replace(pricingOnStyles[i], style);
     });
 
-    pricingMonthly.map((price, i) => {
+    pricingMonthly.map((price: string, i: number) => {
       (document.getElementById(`pricing-price-${i}`) as HTMLHeadingElement).textContent = price + "/month";
-      (document.getElementById(`pricing-disclaimer-${i}`) as HTMLParagraphElement).textContent = "*When billed monthly";
+      (document.getElementById(`pricing-disclaimer-${i}`) as HTMLParagraphElement).classList.toggle("hidden");
     });
-
-    console.log("When billed monthly" as string, ["$14.99", "$24.99", "$34.99"] as string[]);
   }
 
   if ((e?.target as HTMLButtonElement)?.id === "plan-btn-1" && pricingToggle === 0) {
@@ -64,9 +62,9 @@ pricingButtons?.addEventListener("click", (e: Event) => {
       (e?.target as HTMLButtonElement).previousElementSibling?.classList.replace(pricingOnStyles[i], style);
     });
 
-    pricingYearly.map((price, i) => {
+    pricingYearly.map((price: string, i: number) => {
       (document.getElementById(`pricing-price-${i}`) as HTMLHeadingElement).textContent = price + "/month";
-      (document.getElementById(`pricing-disclaimer-${i}`) as HTMLParagraphElement).textContent = "*When billed yearly";
+      (document.getElementById(`pricing-disclaimer-${i}`) as HTMLParagraphElement).classList.toggle("hidden");
     });
   }
 });

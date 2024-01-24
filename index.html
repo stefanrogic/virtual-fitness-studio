@@ -20,7 +20,7 @@
 
     <!--? NAVBAR -->
     <nav class="z-40 top-0 bg-white border-b border-gray-100" id="navbar">
-      <div class="container flex flex-row mx-auto py-6">
+      <div class="container flex flex-row mx-auto py-6 px-4 xl:px-0">
         <h1 class="mr-auto text-3xl font-bold">VFS</h1>
 
         <div class="hidden md:flex flex-row space-x-5 items-center">
@@ -36,11 +36,11 @@
 
     <!--? HERO SECTION -->
     <section class="mt-20">
-      <div class="container mx-auto flex flex-col xl:flex-row items-center xl:space-x-14 space-y-20 xl:space-y-0" id="hero">
+      <div class="container mx-auto flex flex-col xl:flex-row items-center xl:space-x-14 space-y-20 xl:space-y-0 px-4 xl:px-0" id="hero">
         <div class="flex flex-col xl:w-1/2 space-y-14">
           <div class="flex flex-col space-y-7">
             <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-black">Where Fitness Meets Convenience</h1>
-            <p class="text-xl font-normal text-gray-500">Convenient, effective, and tailored to you – virtual workouts for every lifestyle.</p>
+            <p class="text-xl font-normal xl:w-2/3 text-gray-500">Convenient, effective, and tailored to you – virtual workouts for every lifestyle.</p>
           </div>
 
           <div class="flex flex-row space-x-5 items-center">
@@ -59,10 +59,10 @@
       </div>
     </section>
 
-    <div class="container mx-auto mt-20 xl:mt-32 space-y-20 xl:space-y-40">
+    <div class="container mx-auto mt-20 xl:mt-32 space-y-20 xl:space-y-60 px-4 xl:px-0">
       <!--? WORKOUT CATEGORIES SECTION -->
       <section class="flex flex-col space-y-14 items-center" id="workout-categories">
-        <div class="flex flex-col md:flex-row space-y-14 md:space-y-0">
+        <div class="flex flex-col xl:flex-row space-y-14 xl:space-y-0">
           <div class="flex flex-col justify-center items-start md:me-20 cursor-pointer">
             <div class="flex flex-row items-center space-x-5 mb-7">
               <img class="h-10 w-10" src="/images/running.png" alt="category-icon" />
@@ -255,15 +255,72 @@
       </section>
 
       <!--? PRICING PLANS SECTION -->
-      <section class="border" id="pricing"><h1 class="pb-96">PRICING PLANS SECTION</h1></section>
+      <section class="flex flex-col items-center" id="pricing">
+        <h1 class="text-5xl font-bold">Choose your plan</h1>
+        <p class="text-lg font-normal text-gray-500 mt-5">30 day free trial with all plans</p>
+        <div class="flex flex-col xl:flex-row justify-between items-center xl:items-start w-full mt-20 space-y-10 xl:space-y-0">
+          <div class="flex flex-col border rounded-lg w-full lg:w-96 p-7 items-center space-y-10">
+            <h2 class="text-3xl font-medium text-center">Basic Plan: On-Demand Access</h2>
+
+            <ul class="list-disc ms-5 space-y-3 text-gray-500">
+              <li>Access to a vast library of on-demand workout videos</li>
+              <li>Choose from various workout categories, including cardio, strength training, and yoga</li>
+              <li>Flexible scheduling to fit your routine</li>
+              <li>Ideal for those who prefer working out independently at their own pace</li>
+            </ul>
+
+            <div class="flex flex-col space-y-5 mt-auto w-full items-center">
+              <h3 class="text-2xl mt-auto font-medium">$9.99/month</h3>
+              <button class="bg-red-400 hover:bg-red-600 text-white w-full px-5 py-2 transition ease-in-out duration-150 rounded-lg">Try Plan</button>
+              <p class="text-sm font-light text-gray-500 mt-5">*When billed yearly</p>
+            </div>
+          </div>
+          <div class="flex flex-col border rounded-lg w-full lg:w-96 p-7 items-center space-y-10">
+            <h2 class="text-3xl font-medium text-center">Premium Plan: Live Classes + On-Demand</h2>
+
+            <ul class="list-disc ms-5 space-y-3 text-gray-500">
+              <li>All features of the Basic Plan</li>
+              <li>Unlimited access to live virtual classes with certified trainers</li>
+              <li>Real-time interaction with trainers and fellow participants</li>
+              <li>Exclusive early access to new workout programs</li>
+              <li>Personalized workout recommendations based on your fitness goals</li>
+            </ul>
+
+            <div class="flex flex-col space-y-5 mt-auto w-full items-center">
+              <h3 class="text-2xl mt-auto font-medium">$19.99/month</h3>
+              <button class="bg-red-400 hover:bg-red-600 text-white w-full px-5 py-2 transition ease-in-out duration-150 rounded-lg">Try Plan</button>
+              <p class="text-sm font-light text-gray-500 mt-5">*When billed yearly</p>
+            </div>
+          </div>
+          <div class="relative flex flex-col border-4 border-red-400 rounded-lg w-full lg:w-96 p-7 items-center">
+            <h3 class="absolute -bottom-14 xl:-top-14 text-2xl font-bold text-red-400">MOST POPULAR</h3>
+
+            <h2 class="text-3xl font-medium text-center">Ultimate Plan: Personal Coaching + Specialized Workouts</h2>
+
+            <ul class="list-disc ms-5 space-y-3 text-gray-500 mt-10">
+              <li>All features of the Premium Plan</li>
+              <li>One-on-one virtual coaching sessions with experienced trainers</li>
+              <li>Customized workout plans tailored to your specific needs and goals</li>
+              <li>Access to specialized workout programs, rehabilitation exercises, and advanced training techniques</li>
+              <li>Personalized workout recommendations based on your fitness goals</li>
+            </ul>
+
+            <div class="flex flex-col space-y-5 w-full items-center mt-10">
+              <h3 class="text-2xl mt-auto font-medium">$29.99/month</h3>
+              <button class="bg-red-400 hover:bg-red-600 text-white w-full px-5 py-2 transition ease-in-out duration-150 rounded-lg">Try Plan</button>
+              <p class="text-sm font-light text-gray-500 mt-5">*When billed yearly</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!--? CONTACT AND SUPPORT SECTION -->
-      <section class="border" id="contact"><h1 class="pb-96">CONTACT AND SUPPORT SECTION</h1></section>
+      <section class="border pt-20 xl:pt-0" id="contact"><h1 class="pb-96">CONTACT AND SUPPORT SECTION</h1></section>
     </div>
 
     <!--? FOOTER -->
-    <footer class="bg-black mt-40" id="footer">
-      <div class="container mx-auto px-2"><h1 class="text-white pb-96">FOOTER</h1></div>
+    <footer class="bg-black mt-60" id="footer">
+      <div class="container mx-auto px-4 xl:px-0"><h1 class="text-white pb-96">FOOTER</h1></div>
     </footer>
 
     <script type="module" src="/src/ts/main.ts"></script>

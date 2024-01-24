@@ -566,9 +566,9 @@ video {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .container {
-    max-width: 1440px;
+    max-width: 1280px;
   }
 }
 
@@ -663,8 +663,8 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-60 {
-  margin-top: 15rem;
+.mt-52 {
+  margin-top: 13rem;
 }
 
 .mt-auto {
@@ -723,6 +723,10 @@ video {
   width: 6rem;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -769,6 +773,10 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .justify-around {
@@ -825,6 +833,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+}
+
+.space-y-40 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(10rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(10rem * var(--tw-space-y-reverse));
 }
 
 .rounded-full {
@@ -1076,7 +1090,7 @@ video {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .xl\:-top-14 {
     top: -3.5rem;
   }
@@ -1101,6 +1115,10 @@ video {
     width: 24rem;
   }
 
+  .xl\:w-3\/4 {
+    width: 75%;
+  }
+
   .xl\:grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
@@ -1117,6 +1135,10 @@ video {
     align-items: flex-start;
   }
 
+  .xl\:justify-between {
+    justify-content: space-between;
+  }
+
   .xl\:space-x-14 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(3.5rem * var(--tw-space-x-reverse));
@@ -1129,10 +1151,10 @@ video {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .xl\:space-y-60 > :not([hidden]) ~ :not([hidden]) {
+  .xl\:space-y-52 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
-    margin-top: calc(15rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(15rem * var(--tw-space-y-reverse));
+    margin-top: calc(13rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(13rem * var(--tw-space-y-reverse));
   }
 
   .xl\:px-0 {

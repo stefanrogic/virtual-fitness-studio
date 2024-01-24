@@ -257,10 +257,16 @@
       <!--? PRICING PLANS SECTION -->
       <section class="flex flex-col items-center" id="pricing">
         <h1 class="text-5xl font-bold">Choose your plan</h1>
-        <p class="text-lg font-normal text-gray-500 mt-5">30 day free trial with all plans</p>
-        <div class="flex flex-col xl:flex-row justify-between items-center xl:items-start w-full mt-20 space-y-10 xl:space-y-0">
-          <div class="flex flex-col border rounded-lg w-full lg:w-96 p-7 items-center space-y-10">
-            <h2 class="text-3xl font-medium text-center">Basic Plan: On-Demand Access</h2>
+        <p class="text-lg font-normal text-gray-500 mt-3">30 day free trial with all plans</p>
+
+        <div class="flex flex-row mt-5" id="pricing-plan">
+          <button class="cursor-pointer text-xl font-bold text-red-400 bg-white rounded-lg px-4 py-2" id="plan-btn-0">Monthly</button>
+          <button class="cursor-pointer text-xl font-bold text-white bg-red-400 rounded-lg px-7 py-2" id="plan-btn-1">Yearly</button>
+        </div>
+
+        <div class="flex flex-col xl:flex-row justify-around items-center xl:items-start w-full mt-20 space-y-10 xl:space-y-0">
+          <div class="flex flex-col border rounded-lg w-full xl:w-96 p-10 items-center space-y-10">
+            <h2 class="text-3xl font-semibold text-center">Basic Plan</h2>
 
             <ul class="list-disc ms-5 space-y-3 text-gray-500">
               <li>Access to a vast library of on-demand workout videos</li>
@@ -270,13 +276,13 @@
             </ul>
 
             <div class="flex flex-col space-y-5 mt-auto w-full items-center">
-              <h3 class="text-2xl mt-auto font-medium">$9.99/month</h3>
+              <h3 class="text-2xl mt-auto font-medium" id="pricing-price-0">$9.99/month</h3>
               <button class="bg-red-400 hover:bg-red-600 text-white w-full px-5 py-2 transition ease-in-out duration-150 rounded-lg">Try Plan</button>
-              <p class="text-sm font-light text-gray-500 mt-5">*When billed yearly</p>
+              <p class="text-sm font-light text-gray-500 mt-5" id="pricing-disclaimer-0">*When billed yearly</p>
             </div>
           </div>
-          <div class="flex flex-col border rounded-lg w-full lg:w-96 p-7 items-center space-y-10">
-            <h2 class="text-3xl font-medium text-center">Premium Plan: Live Classes + On-Demand</h2>
+          <div class="flex flex-col border rounded-lg w-full xl:w-96 p-10 items-center space-y-10">
+            <h2 class="text-3xl font-semibold text-center">Premium Plan</h2>
 
             <ul class="list-disc ms-5 space-y-3 text-gray-500">
               <li>All features of the Basic Plan</li>
@@ -287,35 +293,45 @@
             </ul>
 
             <div class="flex flex-col space-y-5 mt-auto w-full items-center">
-              <h3 class="text-2xl mt-auto font-medium">$19.99/month</h3>
+              <h3 class="text-2xl mt-auto font-medium" id="pricing-price-1">$19.99/month</h3>
               <button class="bg-red-400 hover:bg-red-600 text-white w-full px-5 py-2 transition ease-in-out duration-150 rounded-lg">Try Plan</button>
-              <p class="text-sm font-light text-gray-500 mt-5">*When billed yearly</p>
+              <p class="text-sm font-light text-gray-500 mt-5" id="pricing-disclaimer-1">*When billed yearly</p>
             </div>
           </div>
-          <div class="relative flex flex-col border-4 border-red-400 rounded-lg w-full lg:w-96 p-7 items-center">
+          <div class="relative flex flex-col border-4 border-red-400 rounded-lg w-full xl:w-96 p-10 items-center">
             <h3 class="absolute -bottom-14 xl:-top-14 text-2xl font-bold text-red-400">MOST POPULAR</h3>
 
-            <h2 class="text-3xl font-medium text-center">Ultimate Plan: Personal Coaching + Specialized Workouts</h2>
+            <h2 class="text-3xl font-semibold text-center">Ultimate Plan</h2>
 
             <ul class="list-disc ms-5 space-y-3 text-gray-500 mt-10">
               <li>All features of the Premium Plan</li>
               <li>One-on-one virtual coaching sessions with experienced trainers</li>
               <li>Customized workout plans tailored to your specific needs and goals</li>
               <li>Access to specialized workout programs, rehabilitation exercises, and advanced training techniques</li>
-              <li>Personalized workout recommendations based on your fitness goals</li>
+              <li>Priority customer support for a seamless fitness experience</li>
             </ul>
 
             <div class="flex flex-col space-y-5 w-full items-center mt-10">
-              <h3 class="text-2xl mt-auto font-medium">$29.99/month</h3>
+              <h3 class="text-2xl mt-auto font-medium" id="pricing-price-2">$29.99/month</h3>
               <button class="bg-red-400 hover:bg-red-600 text-white w-full px-5 py-2 transition ease-in-out duration-150 rounded-lg">Try Plan</button>
-              <p class="text-sm font-light text-gray-500 mt-5">*When billed yearly</p>
+              <p class="text-sm font-light text-gray-500 mt-5" id="pricing-disclaimer-2">*When billed yearly</p>
             </div>
           </div>
         </div>
       </section>
 
       <!--? CONTACT AND SUPPORT SECTION -->
-      <section class="border pt-20 xl:pt-0" id="contact"><h1 class="pb-96">CONTACT AND SUPPORT SECTION</h1></section>
+      <section class="pt-20 xl:pt-0 flex flex-col xl:flex-row-reverse xl:space-x-14" id="contact">
+        <div class="flex flex-col xl:w-1/2 space-y-10">
+          <img class="" src="/images/benefits-img.jpg" alt="" />
+        </div>
+        <div class="flex flex-col xl:w-1/2 mb-20 xl:mb-0 space-y-5">
+          <h1 class="text-5xl font-bold text-red-400">Have questions or need assistance? Reach out to us!</h1>
+          <input class="border w-2/3" type="text" />
+          <input class="border w-2/3" type="text" />
+          <input class="border w-2/3" type="text" />
+        </div>
+      </section>
     </div>
 
     <!--? FOOTER -->

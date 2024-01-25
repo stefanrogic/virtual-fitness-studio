@@ -3,6 +3,9 @@ let navToggle: boolean = false;
 let modalToggle: boolean = false;
 let pricingToggle: number = 1;
 
+// TODO: Show and hide navbar on scroll. Check at the bottom.
+// let currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
 const pricingOnStyles: string[] = ["text-white", "bg-red-400"];
 const pricingOffStyles: string[] = ["text-red-400", "bg-white"];
 
@@ -12,12 +15,14 @@ const pricingYearly: string[] = ["$9.99", "$19.99", "$29.99"];
 //? BUTTONS
 const signInBtn = document.getElementById("signin-btn") as HTMLButtonElement | null;
 const pricingButtons = document.getElementById("pricing-plan") as HTMLDivElement | null;
+const navMenuBtn = document.getElementById("menu-toggle") as HTMLDivElement | null;
 
 //? MODALS
 const signInModal = document.getElementById("signin-modal") as HTMLDivElement | null;
 
 //? NAVBAR
 const navbar = document.getElementById("navbar") as HTMLDivElement | null;
+const navMenu = document.getElementById("menu") as HTMLDivElement | null;
 
 //? FUNCTIONS
 const handlePricingChange = (e: MouseEvent, onArr: string[], ofArr: string[], pricesArr: string[], plan: string): void => {
@@ -38,6 +43,9 @@ const handlePricingChange = (e: MouseEvent, onArr: string[], ofArr: string[], pr
 
 //? EVENT LISTENERS
 //? ///////////////
+//* NAV MENU
+navMenuBtn?.addEventListener("click", () => navMenu?.classList.toggle("hidden"));
+
 //* SIGN IN MODAL
 signInBtn?.addEventListener("click", () => {
   signInModal?.classList.remove("hidden");
@@ -72,3 +80,20 @@ window.addEventListener("mousemove", (e: MouseEvent) => {
     navToggle = false;
   }
 });
+
+// TODO: Implement - Show navbar on scroll up and hide it on scroll down.
+// window.addEventListener("scroll", () => {
+//   const direction = window.scrollY || window.pageYOffset;
+
+//   if (direction > currentScrollPosition) {
+//     navbar?.classList.add("sticky");
+//     navToggle = true;
+//   }
+
+//   if (direction < currentScrollPosition) {
+//     navbar?.classList.remove("sticky");
+//     navToggle = false;
+//   }
+
+//   currentScrollPosition <= 0 ? 0 : direction;
+// });

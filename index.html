@@ -24,9 +24,9 @@
         <h1 class="mr-auto text-3xl font-bold">VFS</h1>
 
         <div class="hidden md:flex flex-row space-x-5 items-center">
-          <a class="text-black hover:text-red-600" href="#">Pricing</a>
-          <a class="text-black hover:text-red-600" href="#">About Us</a>
-          <a class="text-black hover:text-red-600" href="#">Community</a>
+          <a href="#pricing" class="text-black hover:text-red-600">Pricing</a>
+          <a href="#" class="text-black hover:text-red-600">About Us</a>
+          <a href="#contact" class="text-black hover:text-red-600">Contact</a>
           <button class="bg-red-400 hover:bg-red-600 text-white px-5 py-2 transition ease-in-out duration-150 rounded-lg" id="signin-btn">Sign Up</button>
         </div>
 
@@ -44,7 +44,7 @@
           </div>
 
           <div class="flex flex-row space-x-5 items-center">
-            <button class="bg-red-400 hover:bg-red-600 text-white px-5 py-2 transition ease-in-out duration-150 rounded-lg">Start Your Fitness Journey</button>
+            <a href="#pricing" class="bg-red-400 hover:bg-red-600 text-white px-5 py-2 transition ease-in-out duration-150 rounded-lg">Start Your Fitness Journey</a>
             <p class="text-gray-500">Join thousands of people</p>
           </div>
         </div>
@@ -59,37 +59,37 @@
       </div>
     </section>
 
-    <div class="container mx-auto mt-20 xl:mt-32 space-y-40 xl:space-y-52 px-4 xl:px-0">
+    <div class="container mx-auto mt-20 xl:mt-32 space-y-40 xl:space-y-32 px-4 xl:px-0">
       <!--? WORKOUT CATEGORIES SECTION -->
       <section class="flex flex-col space-y-14 items-center" id="workout-categories">
         <div class="flex flex-col xl:flex-row space-y-14 xl:space-y-0">
-          <div class="flex flex-col justify-center items-start md:me-20 cursor-pointer">
-            <div class="flex flex-row items-center space-x-5 mb-7">
+          <div class="flex flex-col justify-center items-start md:me-20">
+            <a href="#" class="flex flex-row items-center space-x-5 mb-7 cursor-pointer">
               <img class="h-10 w-10" src="/images/running.png" alt="category-icon" />
               <h1 class="text-2xl lg:text-3xl font-medium text-red-400">Cardio Workouts</h1>
-            </div>
+            </a>
 
             <p class="text-gray-500">
               Ignite your energy with heart-pounding cardio sessions. From high-intensity intervals to dance-inspired workouts, get ready to boost your stamina and rev up your metabolism. Experience the joy of moving to the beat while torching
               calories.
             </p>
           </div>
-          <div class="flex flex-col justify-center items-start md:me-20 cursor-pointer">
-            <div class="flex flex-row items-center space-x-5 mb-7">
+          <div class="flex flex-col justify-center items-start md:me-20">
+            <a href="#" class="flex flex-row items-center space-x-5 mb-7 cursor-pointer">
               <img class="h-10 w-10" src="/images/dumbbell.png" alt="category-icon" />
               <h1 class="text-2xl lg:text-3xl font-medium text-red-400">Strength Training</h1>
-            </div>
+            </a>
 
             <p class="text-gray-500">
               Build strength, tone muscles, and sculpt your body with our dynamic strength training programs. Whether you're a beginner or a seasoned lifter, our expert trainers guide you through effective exercises designed to enhance your power and
               resilience.
             </p>
           </div>
-          <div class="flex flex-col justify-center items-start cursor-pointer">
-            <div class="flex flex-row items-center space-x-5 mb-7">
+          <div class="flex flex-col justify-center items-start">
+            <a href="#" class="flex flex-row items-center space-x-5 mb-7 cursor-pointer">
               <img class="h-10 w-10" src="/images/lotus.png" alt="category-icon" />
               <h1 class="text-2xl lg:text-3xl font-medium text-red-400">Yoga Sessions</h1>
-            </div>
+            </a>
 
             <p class="text-gray-500">
               Embark on a journey of mindfulness and flexibility with our rejuvenating yoga sessions. Find balance, improve your posture, and connect with your breath in a tranquil virtual environment. Unwind, de-stress, and foster a sense of inner
@@ -101,7 +101,7 @@
       </section>
 
       <!--? BENEFITS SECTION -->
-      <section class="flex flex-col-reverse xl:flex-row items-center xl:justify-between">
+      <section class="flex flex-col-reverse xl:flex-row items-center xl:justify-between pt-20">
         <div class="flex flex-col xl:w-1/2 space-y-10">
           <h1 class="text-5xl font-bold text-red-400">Experience Fitness on Your Own Terms</h1>
           <p class="font-medium text-lg">
@@ -122,10 +122,11 @@
       </section>
 
       <!--? TESTIMONIALS SECTION -->
-      <section class="flex flex-col space-y-10" id="testimonials">
-        <!-- <h1>TESTIMONIALS</h1> -->
+      <section class="flex flex-col items-center pt-20" id="testimonials">
+        <h1 class="text-3xl md:text-5xl font-bold text-center">Testimonials</h1>
+        <p class="text-lg font-normal text-gray-500 mt-3">Experiences shared by members of our community</p>
 
-        <div class="grid grid-rows-6 md:grid-rows-3 xl:grid-rows-2 grid-flow-col gap-7">
+        <div class="grid grid-rows-6 md:grid-rows-3 xl:grid-rows-2 grid-flow-col gap-7 mt-20">
           <div class="flex flex-col space-y-5 p-7 border rounded-lg">
             <div class="flex flex-row space-x-5">
               <div class="w-14 h-14 rounded-full bg-red-400"></div>
@@ -245,7 +246,7 @@
       </section>
 
       <!--? PRICING PLANS SECTION -->
-      <section class="flex flex-col items-center" id="pricing">
+      <section class="flex flex-col items-center pt-20" id="pricing">
         <h1 class="text-3xl md:text-5xl font-bold text-center">Choose your plan</h1>
         <p class="text-lg font-normal text-gray-500 mt-3">30 day free trial with all plans</p>
 
@@ -289,7 +290,7 @@
             </div>
           </div>
           <div class="relative flex flex-col border-4 border-red-400 rounded-lg w-full xl:w-96 p-10 items-center">
-            <h3 class="absolute -bottom-14 xl:-top-14 text-2xl font-bold text-red-400">MOST POPULAR</h3>
+            <h3 class="absolute -bottom-14 xl:-top-14 text-2xl font-bold text-red-400 h-8">MOST POPULAR</h3>
 
             <h2 class="text-3xl font-semibold text-center">Ultimate Plan</h2>
 
@@ -311,16 +312,39 @@
       </section>
 
       <!--? CONTACT AND SUPPORT SECTION -->
-      <section class="pt-20 xl:pt-0 flex flex-col xl:flex-row-reverse xl:space-x-14" id="contact">
-        <div class="flex flex-col xl:w-1/2 space-y-10">
-          <img class="" src="/images/benefits-img.jpg" alt="" />
+      <section class="flex flex-col items-center pt-20" id="contact">
+        <h1 class="text-3xl md:text-5xl font-bold text-center">Get in Touch</h1>
+        <p class="text-lg font-normal text-gray-500 mt-3">Have questions or need assistance? Reach out to us!</p>
+
+        <p class="mt-20 w-full xl:w-1/2 text-gray-500">
+          We're here to help you on your fitness journey. Whether you have inquiries about our virtual studio, need technical support, or just want to share your feedback, our team is ready to assist you. Reach out using the contact form below or
+          connect with us through our social media channels.
+        </p>
+
+        <form class="flex flex-col w-full xl:w-1/2 space-y-7 mt-10" action="" method="post">
+          <div class="flex flex-col xl:flex-row xl:space-x-7 space-y-7 xl:space-y-0">
+            <input class="border xl:flex-1 h-12 px-4 rounded-lg" placeholder="First Name" type="text" />
+            <input class="border xl:flex-1 h-12 px-4 rounded-lg" placeholder="Last Name" type="text" />
+          </div>
+          <input class="border h-12 px-4 rounded-lg" placeholder="Email" type="text" />
+          <textarea class="border p-4 rounded-lg" placeholder="Message" rows="4" cols="50" type="text"></textarea>
+          <button type="submit" class="bg-red-400 hover:bg-red-600 text-white w-full px-5 py-2 transition ease-in-out duration-150 rounded-lg">Submit</button>
+        </form>
+
+        <div class="flex flex-row space-x-5 mt-10">
+          <a href="#" class="rounded-full p-5 bg-black cursor-pointer"></a>
+          <a href="#" class="rounded-full p-5 bg-blue-500 cursor-pointer"></a>
+          <a href="#" class="rounded-full p-5 bg-red-400 cursor-pointer"></a>
         </div>
-        <div class="flex flex-col xl:w-1/2 mb-20 xl:mb-0 space-y-5">
-          <h1 class="text-5xl font-bold text-red-400">Have questions or need assistance? Reach out to us!</h1>
-          <input class="border w-2/3" type="text" />
-          <input class="border w-2/3" type="text" />
-          <input class="border w-2/3" type="text" />
-        </div>
+      </section>
+
+      <!--? LAST CTA -->
+      <section class="flex flex-col justify-center items-center pt-20" id="last-cta">
+        <p class="text-red-400 text-xl">Claim your free 30 days</p>
+
+        <h1 class="text-3xl md:text-4xl font-bold text-black text-center mt-5">Take the first step towards a healthier, fitter you. Join our virtual fitness community today.</h1>
+
+        <a href="#pricing" class="bg-red-400 hover:bg-red-600 text-white px-5 py-2 transition ease-in-out duration-150 rounded-lg mt-10">Get Started Now</a>
       </section>
     </div>
 

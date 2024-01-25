@@ -671,6 +671,14 @@ video {
   margin-top: auto;
 }
 
+.ms-auto {
+  margin-inline-start: auto;
+}
+
+.me-auto {
+  margin-inline-end: auto;
+}
+
 .flex {
   display: flex;
 }
@@ -743,6 +751,10 @@ video {
   cursor: pointer;
 }
 
+.scroll-mt-20 {
+  scroll-margin-top: 5rem;
+}
+
 .scroll-mt-32 {
   scroll-margin-top: 8rem;
 }
@@ -751,8 +763,8 @@ video {
   scroll-margin-top: 13rem;
 }
 
-.scroll-mt-20 {
-  scroll-margin-top: 5rem;
+.scroll-mt-14 {
+  scroll-margin-top: 3.5rem;
 }
 
 .list-disc {
@@ -853,6 +865,10 @@ video {
   margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -903,8 +919,25 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-red-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
+}
+
+.bg-\[url\(\'\/images\/contact-bg\.jpg\'\)\] {
+  background-image: url('/images/contact-bg.jpg');
+}
+
+.bg-\[url\(\'\/images\/contact-bg\'\)\] {
+  background-image: url('/images/contact-bg');
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .p-10 {
@@ -948,12 +981,33 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.pb-96 {
-  padding-bottom: 24rem;
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-.pt-20 {
-  padding-top: 5rem;
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.pb-96 {
+  padding-bottom: 24rem;
 }
 
 .text-center {
@@ -1039,6 +1093,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.bg-blend-darken {
+  background-blend-mode: darken;
+}
+
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1069,6 +1127,10 @@ video {
 .hover\:text-red-600:hover {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
+.hover\:bg-blend-darken:hover {
+  background-blend-mode: darken;
 }
 
 @media (min-width: 786px) {
@@ -1161,12 +1223,6 @@ video {
     justify-content: space-between;
   }
 
-  .xl\:-space-y-32 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(-8rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(-8rem * var(--tw-space-y-reverse));
-  }
-
   .xl\:space-x-14 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(3.5rem * var(--tw-space-x-reverse));
@@ -1191,18 +1247,8 @@ video {
     margin-bottom: calc(13rem * var(--tw-space-y-reverse));
   }
 
-  .xl\:space-y-32 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(8rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(8rem * var(--tw-space-y-reverse));
-  }
-
   .xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
-  }
-
-  .xl\:pt-0 {
-    padding-top: 0px;
   }
 }

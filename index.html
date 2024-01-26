@@ -11,9 +11,17 @@
     <!--! MODALS -->
     <div class="hidden" id="signin-modal">
       <div class="fixed z-30 flex justify-center items-center m-auto h-screen w-screen inset-x-0 inset-y-0 bg-black bg-opacity-20"></div>
-      <div class="fixed z-40 m-auto md: h-3/4 w-2/5 inset-x-0 inset-y-0 border bg-white">
-        <button class="ml-auto text-3xl p-4 bg-red-400 hover:bg-red-600 text-white transition ease-in-out duration-150 rounded-lg" id="close-modal">X</button>
-        <h1>SIGN IN MODAL</h1>
+      <div class="fixed z-40 p-5 flex flex-col items-center m-auto md: h-full xl:h-3/5 w-full xl:w-2/6 inset-x-0 inset-y-0 border bg-white rounded-lg">
+        <div class="w-full flex flex-row items-end">
+          <button class="ml-auto text-lg px-3 py-1 text-black font-bold transition ease-in-out duration-150 rounded-lg" id="close-modal">X</button>
+        </div>
+        <h2 class="text-3xl md:text-5xl font-bold text-center">Sign In</h2>
+        <form class="flex flex-col w-3/4 mt-10 space-y-7">
+          <input class="border h-12 px-4 rounded-lg" placeholder="Email" type="text" />
+          <input class="border h-12 px-4 rounded-lg" placeholder="Password" type="password" />
+          <button class="bg-red-400 hover:bg-red-600 text-white px-5 py-2 transition ease-in-out duration-150 rounded-lg">Sign Up</button>
+        </form>
+        <p class="mt-10">Dont have an account? <a class="text-red-400 underline" href="#">Sign Up</a></p>
       </div>
     </div>
 
@@ -26,7 +34,7 @@
 
         <div class="hidden md:flex flex-row space-x-5 items-center">
           <a href="#" class="text-black hover:text-red-600">Blog</a>
-          <a href="#benefits" class="text-black hover:text-red-600">About</a>
+          <a href="#about" class="text-black hover:text-red-600">About</a>
           <a href="#pricing" class="text-black hover:text-red-600">Pricing</a>
           <a href="#contact" class="text-black hover:text-red-600">Contact</a>
           <button class="bg-red-400 hover:bg-red-600 text-white px-5 py-2 transition ease-in-out duration-150 rounded-lg" id="signin-btn">Sign Up</button>
@@ -37,7 +45,7 @@
 
       <div class="hidden container flex flex-row justify-between items-center mx-auto py-2 px-4 xl:px-0 border-t border-gray-100" id="menu">
         <a href="#" class="text-black hover:text-red-600">Blog</a>
-        <a href="#benefits" class="text-black hover:text-red-600">About</a>
+        <a href="#about" class="text-black hover:text-red-600">About</a>
         <a href="#pricing" class="text-black hover:text-red-600">Pricing</a>
         <a href="#contact" class="text-black hover:text-red-600">Contact</a>
         <button class="text-black" id="signin-btn">Sign Up</button>
@@ -332,14 +340,14 @@
             connect with us through our social media channels.
           </p>
 
-          <form class="flex flex-col w-full space-y-7 mt-10" action="" method="post">
+          <form class="flex flex-col w-full space-y-7 mt-10">
             <div class="flex flex-col xl:flex-row xl:space-x-7 space-y-7 xl:space-y-0">
               <input class="border xl:flex-1 h-12 px-4 rounded-lg" placeholder="First Name" type="text" />
               <input class="border xl:flex-1 h-12 px-4 rounded-lg" placeholder="Last Name" type="text" />
             </div>
             <input class="border h-12 px-4 rounded-lg" placeholder="Email" type="text" />
             <textarea class="border p-4 rounded-lg" placeholder="Message" rows="4" cols="50" type="text"></textarea>
-            <button type="submit" class="bg-red-400 hover:bg-red-600 text-white w-full px-5 py-2 transition ease-in-out duration-150 rounded-lg">Submit</button>
+            <button class="bg-red-400 hover:bg-red-600 text-white w-full px-5 py-2 transition ease-in-out duration-150 rounded-lg">Submit</button>
           </form>
 
           <div class="flex flex-row space-x-5 mt-10">
@@ -364,31 +372,31 @@
 
     <!--? FOOTER -->
     <footer class="bg-white" id="footer">
-      <div class="container mx-auto px-4 xl:px-0 py-32 flex flex-col xl:flex-row items-center xl:items-start xl:justify-between space-y-10 xl:space-y-0">
-        <div class="flex flex-col xl:w-1/5 items-center xl:items-start">
+      <div class="container mx-auto px-4 xl:px-0 py-20 flex flex-col xl:flex-row items-center xl:items-start xl:justify-between space-y-10 xl:space-y-0">
+        <div class="flex flex-col xl:w-1/5 items-center space-y-1 xl:items-start">
           <h2 class="text-4xl font-bold text-black mb-7">Explore</h2>
-          <a class="text-black text-xl hover:underline" href="#about">About Us</a>
-          <a class="text-black text-xl hover:underline" href="#">Our Trainers</a>
-          <a class="text-black text-xl hover:underline" href="#pricing">Pricing</a>
-          <a class="text-black text-xl hover:underline" href="#">Blog</a>
+          <a class="text-black text-lg hover:underline" href="#about">About Us</a>
+          <a class="text-black text-lg hover:underline" href="#">Our Trainers</a>
+          <a class="text-black text-lg hover:underline" href="#pricing">Pricing</a>
+          <a class="text-black text-lg hover:underline" href="#">Blog</a>
         </div>
 
-        <div class="flex flex-col xl:w-1/5 items-center xl:items-start">
+        <div class="flex flex-col xl:w-1/5 items-center space-y-1 xl:items-start">
           <h2 class="text-4xl font-bold text-black mb-7">Support</h2>
-          <a class="text-black text-xl hover:underline" href="#contact">Contact Us</a>
-          <a class="text-black text-xl hover:underline" href="#">FAQs</a>
-          <a class="text-black text-xl hover:underline" href="#">Technical Support</a>
-          <a class="text-black text-xl hover:underline" href="#">Terms of Service</a>
+          <a class="text-black text-lg hover:underline" href="#contact">Contact Us</a>
+          <a class="text-black text-lg hover:underline" href="#">FAQs</a>
+          <a class="text-black text-lg hover:underline" href="#">Technical Support</a>
+          <a class="text-black text-lg hover:underline" href="#">Terms of Service</a>
         </div>
 
-        <div class="flex flex-col xl:w-1/5 items-center xl:items-start">
+        <div class="flex flex-col xl:w-1/5 items-center space-y-1 xl:items-start">
           <h2 class="text-4xl font-bold text-black mb-7">Connect</h2>
-          <a class="text-black text-xl hover:underline" href="#">Facebook</a>
-          <a class="text-black text-xl hover:underline" href="#">Instagram</a>
-          <a class="text-black text-xl hover:underline" href="#">Twitter</a>
+          <a class="text-black text-lg hover:underline" href="#">Facebook</a>
+          <a class="text-black text-lg hover:underline" href="#">Instagram</a>
+          <a class="text-black text-lg hover:underline" href="#">Twitter</a>
         </div>
 
-        <div class="flex flex-col items-center xl:items-end xl:w-2/5">
+        <div class="flex flex-col items-center xl:items-end space-y-1 xl:w-2/5">
           <h2 class="text-4xl font-bold text-black mb-7">Join our Newsletter</h2>
           <div class="w-full flex flex-row">
             <input class="px-4 py-3 w-full rounded-s-lg border" placeholder="Enter your email" type="text" /><button class="bg-red-400 hover:bg-red-600 text-white px-8 py-2 transition ease-in-out duration-150 rounded-e-lg rounded">Join</button>
